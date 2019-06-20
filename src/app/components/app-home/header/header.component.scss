@@ -1,0 +1,55 @@
+:host{
+  #app-header{
+    height: calc(100vh - 80px);
+    .home-elements-container{
+      height: 100%;
+
+        &>div{
+          position: relative;
+          height: 100%;
+
+          &:nth-child(1){
+            width: 100%;
+            border-bottom: 1px solid lightgrey;
+            @media screen and (min-width: 600px) {
+              border-bottom: none;
+              border-right: 1px solid lightgrey;
+
+            }
+          }
+
+
+          &>a{
+            text-decoration: none;
+            display: block;
+            color: grey;
+            transition: 0.3s ease-in-out;
+
+            &:hover{
+              color: black;
+            }
+
+            &>div{
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+
+              p{
+                margin: 5px 0;
+                font-size: 1.5rem;
+              }
+
+              h1{
+                margin: 0;
+                font-size: 4rem;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+
+
+    }
+  }
+}

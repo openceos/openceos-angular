@@ -1,0 +1,18 @@
+@import '~@angular/material/theming';
+
+
+@include mat-core();
+
+
+$ceo-primary: mat-palette($mat-deep-purple);
+$ceo-accent:  mat-palette($mat-pink, A200, A100, A400);
+
+
+$ceo-warn:    mat-palette($mat-red);
+
+$ceo-theme: mat-light-theme($ceo-primary, $ceo-accent, $ceo-warn);
+
+$break-small: 320px;
+$break-large: 1200px;
+
+@include angular-material-theme($ceo-theme);
